@@ -1,5 +1,9 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
+import AboutPage from "./pages/AboutPage";
+import AccountPage from "./pages/AccountPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   const [darkMode, setDarkMode] = useState("dark");
@@ -20,7 +24,14 @@ function App() {
         darkMode === "dark" ? "dark" : "light"
       } min-h-screen flex flex-col`}
     >
-      <LandingPage />
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/account" element={<AccountPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

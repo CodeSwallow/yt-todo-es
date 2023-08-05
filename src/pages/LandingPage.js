@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -9,22 +10,22 @@ export default function LandingPage() {
         <h1 className="font-extrabold text-5xl mb-16">
           Planeador de Actividades
         </h1>
-        <a
+        <Link
           className="py-2 px-4 rounded-lg bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600"
-          href="/"
+          to="/account"
         >
           Iniciar sesión
-        </a>
+        </Link>
         <p className="text-lg my-8">
           Crea, edita, y ve tus actividades de manera sencilla.
         </p>
 
-        <a
+        <Link
           className="py-2 px-4 rounded-lg bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600"
-          href="/"
+          to="/about"
         >
           Conoce mas
-        </a>
+        </Link>
       </section>
       <Footer />
     </div>

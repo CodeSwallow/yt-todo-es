@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <nav className="px-2 sm:px-4 py-2.5">
       <div className="flex items-center justify-between mx-auto px-8 sm:px-24">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="transition hover:scale-110 ease-in duration-100 flex items-center text-xl font-semibold  dark:text-white"
         >
           <span className="text-xl font-semibold  dark:text-white">
@@ -12,7 +14,7 @@ export default function Navbar() {
               Manager
             </span>
           </span>
-        </a>
+        </Link>
         <div>
           <ul className="flex p-4 space-x-4 md:space-x-8 text-lg items-center">
             <li className="transition hover:scale-110 ease-in duration-100">
@@ -34,7 +36,13 @@ export default function Navbar() {
               </button>
             </li>
             <li className="transition hover:scale-110 ease-in duration-100">
-              <a href="/">Cuenta</a>
+              <Link to="/">Home</Link>
+            </li>
+            <li className="transition hover:scale-110 ease-in duration-100">
+              <Link to="/about">Sobre</Link>
+            </li>
+            <li className="transition hover:scale-110 ease-in duration-100">
+              <Link to="/account">Cuenta</Link>
             </li>
           </ul>
         </div>
