@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
 
 export default function Navbar() {
+  const { toggleDarkMode } = useContext(ThemeContext);
+
   return (
     <nav className="px-2 sm:px-4 py-2.5">
       <div className="flex items-center justify-between mx-auto px-8 sm:px-24">
@@ -18,7 +22,7 @@ export default function Navbar() {
         <div>
           <ul className="flex p-4 space-x-4 md:space-x-8 text-lg items-center">
             <li className="transition hover:scale-110 ease-in duration-100">
-              <button onClick={() => console.log("clicked")}>
+              <button onClick={toggleDarkMode}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

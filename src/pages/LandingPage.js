@@ -11,7 +11,7 @@ export default function LandingPage() {
           Planeador de Actividades
         </h1>
         <Link
-          className="py-2 px-4 rounded-lg bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600"
+          className="py-2 px-4 text-white rounded-lg bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600"
           to="/account"
         >
           Iniciar sesión
@@ -21,7 +21,7 @@ export default function LandingPage() {
         </p>
 
         <Link
-          className="py-2 px-4 rounded-lg bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600"
+          className="py-2 px-4 text-white rounded-lg bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600"
           to="/about"
         >
           Conoce mas
